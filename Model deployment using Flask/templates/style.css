@@ -1,0 +1,40 @@
+body{
+    background: #606c88;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.content{
+    margin-left:400px;
+   margin-top:150px;
+  
+}
+h1{
+    margin-bottom: 95px;
+    color:ghostwhite;
+}
+.area{
+    background-color: black;
+    color:white;
+}
+h3{
+    color:bisque;
+}
+p{
+    height:90px;
+    inline-size: 75px;
+    padding:0px;
+    margin:0px;
+}
+.footer{
+    margin:0px;
+    padding:0px;
+    margin-left:95px;
+}
+h2{
+    text-align: center;
+    color:black;
+}
+a{
+    color:azure;
+}

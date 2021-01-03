@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fake News Detection</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container1"> 
+    <div class="content">
+        <h1>Copy paste your news here </h1>
+        <form action="/" method="POST">
+            <textarea name="txt" rows="4" cols="50" class="area">
+            </textarea>
+        <br>
+            <input type="submit" name="submit" class="alert alert-success">
+        </form>
+        <br/> 
+        <div class="container">
+            <h3>Entered News Text is: </h3>
+            {{ request.form['txt'] }}
+        </div>
+        <div class="container">
+            <h3>Our Machine learning Model Found That is a:</h3>
+        <p>{% if result == 0 %}
+            <p style="color: red;" class="alert alert-danger">Fake News</p>
+           {% else  %}
+            <p><p style="color:seagreen;" class="alert alert-success">True News</p></p>
+           {% endif  %}
+        </p> 
+        </div>
+    </div>
+       
+        
+    
+    </div>
+    <div class="footer">    
+         <h2 >
+            Created by <br><a href="https://github.com/giriteja94495"> @Bille Giriteja</a>,
+            <a href="https://github.com/pradyumnac26"> @C Pradyumna</a> ,
+            <a href="https://github.com/praneeth019"> @Praneeth</a> ,
+            <a href="https://github.com/chetankarthikeya9"> @Chethan Karthikeya</a>.
+
+         </h2>
+       
+    </div>
+​
+        
+           
+    </body>
+
+</html>
